@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .gender {
+            width: auto;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label>Full Name:</label>
+        <input type="text" name="fullname" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter password" required>
+
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" placeholder="Confirm password" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" placeholder="Enter phone number" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" class="gender"> Male
+        <input type="radio" name="gender" value="Female" class="gender"> Female
+        <input type="radio" name="gender" value="Other" class="gender"> Other
+
+        <label>Country:</label>
+        <select name="country" required>
+            <option value="">Select Country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Australia</option>
+        </select>
+
+        <label>
+            <input type="checkbox" required>
+            I agree to the Terms and Conditions
+        </label>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+</body>
+</html>
